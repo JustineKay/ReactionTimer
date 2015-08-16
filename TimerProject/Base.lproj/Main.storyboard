@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W7-z6-U7c" userLabel="Start Button">
+                                <rect key="frame" x="285" y="285" width="31" height="30"/>
+                                <state key="normal" title="start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="65p-3H-Gko"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="counter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhp-sM-4DJ" userLabel="counter">
+                                <rect key="frame" x="228" y="93" width="145" height="46"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RA6-Ex-Ige" userLabel="Red/Green View">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzr-fW-1sF" userLabel="Reaction Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reactionButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PkQ-Qq-Gg2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GQ4-oV-C2h"/>
+                                    <constraint firstAttribute="height" constant="300" id="ypo-U1-1Pi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="best time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6C-1F-8XR">
+                                <rect key="frame" x="260" y="501" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfw-OM-Xhm" userLabel="lowestTime#">
+                                <rect key="frame" x="278" y="530" width="45" height="20"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cfw-OM-Xhm" secondAttribute="centerX" id="DX8-GB-AvQ"/>
+                            <constraint firstAttribute="centerY" secondItem="RA6-Ex-Ige" secondAttribute="centerY" id="JTK-d6-XJG"/>
+                            <constraint firstItem="Zhp-sM-4DJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="73" id="UXU-Dx-KJ5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cfw-OM-Xhm" secondAttribute="bottom" constant="50" id="WIO-aG-Ymh"/>
+                            <constraint firstAttribute="centerX" secondItem="3W7-z6-U7c" secondAttribute="centerX" id="e1x-Fl-otW"/>
+                            <constraint firstAttribute="centerX" secondItem="z6C-1F-8XR" secondAttribute="centerX" id="mrt-dg-g6b"/>
+                            <constraint firstAttribute="centerX" secondItem="RA6-Ex-Ige" secondAttribute="centerX" id="o3P-QW-6xr"/>
+                            <constraint firstAttribute="centerY" secondItem="3W7-z6-U7c" secondAttribute="centerY" id="obT-3D-q1d"/>
+                            <constraint firstAttribute="centerX" secondItem="Zhp-sM-4DJ" secondAttribute="centerX" id="t2J-jL-zJh"/>
+                            <constraint firstItem="cfw-OM-Xhm" firstAttribute="top" secondItem="z6C-1F-8XR" secondAttribute="bottom" constant="8" id="tcQ-We-hMN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bestTimeLabel" destination="z6C-1F-8XR" id="bst-LY-1w2"/>
+                        <outlet property="bestTimeNumeralLabel" destination="cfw-OM-Xhm" id="Ep3-IB-Z0m"/>
+                        <outlet property="reactionButton" destination="rzr-fW-1sF" id="rfe-0E-XTX"/>
+                        <outlet property="redGreenView" destination="RA6-Ex-Ige" id="0s5-Nd-cWO"/>
+                        <outlet property="startButton" destination="3W7-z6-U7c" id="kaq-gn-gqP"/>
+                        <outlet property="timerLabel" destination="Zhp-sM-4DJ" id="PfE-TX-doz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
