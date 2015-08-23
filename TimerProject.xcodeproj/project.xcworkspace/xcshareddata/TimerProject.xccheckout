@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42FEF7E7-9495-4854-B40D-6F9A52CAE1F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TimerProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F9301B87E3F6F3A38AD13F9669478C47EF5C1254</key>
+		<string>https://github.com/JustineKay/ReationTimer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TimerProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F9301B87E3F6F3A38AD13F9669478C47EF5C1254</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JustineKay/ReationTimer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F9301B87E3F6F3A38AD13F9669478C47EF5C1254</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9301B87E3F6F3A38AD13F9669478C47EF5C1254</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TimerProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>
